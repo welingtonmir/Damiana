@@ -1,0 +1,20 @@
+#lojas {
+    text-align: center;
+}
+#lojas div{
+    margin: 20px;
+
+}
+.imagem_produto{
+    width:120px;
+}
+.caixasDivisao{
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+}
+.caixasDivisao div{
+    text-align: center;
+    width: 50%;
+    
+}

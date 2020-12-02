@@ -1,0 +1,16 @@
+.active{
+    border-bottom: 2px solid rgba(225, 225, 245, .9);
+}
+#menu{
+    background-color:#43AA8B;
+    height: 75px;
+}
+nav a{
+    font-size: 25px;
+}
+nav img{
+    width:175px;
+}
+#logo{
+    padding:0px 40px 0px ;
+}
