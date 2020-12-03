@@ -6,18 +6,16 @@ function query($sql){
     $database   = "damiana";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
-    if (!$conn){
+    if (!$conn)
         die ("Falha na conexão com o BD " . mysqli_connect_error());
-    }else{
-        echo "ok";
-    }
+    
     
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
     return $result;
 }
 
-/*function noquery($sql){
+function noquery($sql){
     $servername = "localhost";
     $username   = "root";
     $password   = "";
@@ -29,6 +27,6 @@ function query($sql){
     $result = mysqli_query($conn, $sql);
     mysqli_close($conn);
 }
-*/
+
 
 ?>
