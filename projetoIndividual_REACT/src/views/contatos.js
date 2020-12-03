@@ -1,4 +1,4 @@
-import Contato from '../componet/contatos';
+import Contato from '../componente/contatos';
 
 export default function contato(){
     return(

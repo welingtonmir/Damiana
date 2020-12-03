@@ -8,7 +8,7 @@
   <body>
      <!--Menu-->
    <?php
-    require('menu.html');
+    require("./componentes/menu.html");
    ?>
     <header>
       <h2>Nossas Lojas</h2>
@@ -60,7 +60,7 @@
     <hr>
     <!--Rodapé-->
     <?php
-    include_once("rodape.html");
+     include_once("./componentes/rodape.html");
     ?>
   </body>
 </html>

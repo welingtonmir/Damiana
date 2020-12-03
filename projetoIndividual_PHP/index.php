@@ -9,7 +9,7 @@
   <body>
     <!--Menu-->
    <?php
-    require("menu.html");
+    require("./componentes/menu.html");
    ?>
    
     <header>
@@ -29,7 +29,7 @@
     </main>
     <!--Rodapé-->
     <?php
-    include_once("rodape.html");
+    include_once("./componentes/rodape.html");
     ?>
   </body>
 </html>

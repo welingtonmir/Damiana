@@ -1,12 +1,12 @@
 import { useState, useEffect} from 'react';
 
-import Produto from '../componet/Produto';
+import Produto from '../componente/Produto';
 
 export default function Produtos(){
     const [ produtos, setProdutos] = useState([]);
 
     useEffect(async () => {
-        const resposta = await fetch("http://localhost/Damiana/projetoIndividual/api/produtos.php");
+        const resposta = await fetch("http://localhost/Damiana/projetoIndividual_PHP/api/produtosbd.php");
         const dados = await resposta.json();
         console.log(dados);
     }, []);

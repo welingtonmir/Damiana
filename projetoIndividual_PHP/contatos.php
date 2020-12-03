@@ -9,7 +9,7 @@
   <body>
      <!--Menu-->
    <?php
-    require('menu.html');
+    require("./componentes/menu.html");
    ?>
     <header>
       <h2>Contatos</h2>
@@ -30,7 +30,7 @@
    
     <!--Rodapé-->
     <?php
-    include_once("rodape.html");
+     include_once("./componentes/rodape.html");
     ?>
   </body>
 </html>
