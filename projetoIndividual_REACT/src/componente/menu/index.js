@@ -1,18 +1,18 @@
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Image} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
 import './Menu.css';
 
  function BaseMenu(props){
    const {location} = props;
   return(
-    <Navbar className="navbar-dark" id="menu" fixed="top">
+    <Navbar className="navbar-dark" expand="lg" id="menu" fixed="top">
       <Navbar.Brand>
-        <Nav.Link as={Link} href="/" to="/">
-          <img id="logo" src={require(`./img/Logo.png`).default} />
+        <Nav.Link as={Link} href="/" to="/" className="ml-5">
+          <Image id="logo" src={require(`./img/Logo.png`).default}/>
         </Nav.Link>        
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="item-menu" />
-      <Navbar.Collapse id="item-menu" >
+      <Navbar.Toggle aria-controls="itens-menu" />
+      <Navbar.Collapse id="itens-menu" >
         <Nav activeKey={location.pathname} className="ml-auto mr-3">
           <Nav.Item>
             <Nav.Link as={Link} href="/" to="/">Home</Nav.Link>
