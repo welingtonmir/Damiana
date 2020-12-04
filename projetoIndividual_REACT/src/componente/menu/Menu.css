@@ -14,11 +14,11 @@ nav a{
     font-size: 25px;
 }
 nav img{
-    width:175px;
+    width: 170px;
     
 }
 #logo{
     text-align: left;
     padding:0px 40px 0px ;
-    margin: 0;
+    margin: -90px;
 }
