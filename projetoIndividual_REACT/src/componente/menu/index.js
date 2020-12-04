@@ -24,10 +24,7 @@ import './Menu.css';
             <Nav.Link as={Link} href="/contatos" to="/contatos">Contatos</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} href="/pedidos" to="/pedidos">Pedidos</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link as={Link} href="/lojas" to="/lojas">Nossas Lojas</Nav.Link>
+            <Nav.Link as={Link} href="/lojas" to="/lojas">Lojas</Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
