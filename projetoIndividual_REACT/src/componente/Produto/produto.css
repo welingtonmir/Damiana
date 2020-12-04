@@ -17,13 +17,6 @@
     width: 100%;
     flex-wrap: wrap;
 }
-.produtos div{
-    width: 33%;
-    text-align: center;
-}
-#imagem_produto{
-    width:120px;
-}  
 .precoOriginal{
     margin: 0;
     font-size:15px;
