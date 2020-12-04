@@ -2,7 +2,7 @@ import { useState, useEffect} from 'react';
 import Categoria from '../componente/Produto/categoria.js';
 import 'bootstrap/dist/css/bootstrap.css'
 import '../componente/Produto/produto.css'
-import {Card, CardDeck, Button} from 'react-bootstrap';
+import {Card, Button} from 'react-bootstrap';
 
 export default function Produtos(){
     const [ produtos, setProdutos] = useState([]);
