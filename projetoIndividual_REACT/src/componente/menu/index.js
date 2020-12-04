@@ -8,7 +8,7 @@ import './Menu.css';
     <Navbar className="navbar-dark" expand="lg" id="menu" fixed="top">
       <Navbar.Brand>
         <Nav.Link as={Link} href="/" to="/" className="ml-5">
-          <Image id="logo" src={require(`./img/Logo.png`).default} fluid/>
+          <Image id="logo" src={require(`./img/Logo.png`).default} />
         </Nav.Link>        
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="itens-menu" />

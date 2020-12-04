@@ -1,5 +1,5 @@
 
-import '../funcoes/funcoes.js'
+
 export default function Categoria(){
     return(
         <section class="categorias">
