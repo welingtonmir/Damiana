@@ -31,11 +31,11 @@
         </ol>
       </section> 
       <section class="produtos">
-        <div class="box_produtos" id="<?php echo $id ?>" style="display:inline-block;">
+        <div class="box_produtos" id="" style="display:inline-block;">
           <img id="imagem_produto" src="<?php echo $imagem?>" alt="<?php echo $descricao?>" onclick="destaque(this)"/>
           <p><?php echo $descricao ?>    </p>
-          <p class="precoOriginal"> <?php echo $preco ?>  </p>
-          <p class="precoVenda">  <?php  echo $pv?>    </p>
+          <p class="precoOriginal">R$ <?php echo $preco ?>  </p>
+          <p class="precoVenda">R$  <?php  echo $pv?>    </p>
           <hr>
         </div>
       </section>

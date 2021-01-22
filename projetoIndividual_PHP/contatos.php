@@ -9,13 +9,12 @@
   <body>
      <!--Menu-->
    <?php
-    require("./componentes/menu.html");
+    require_once ("./componentes/menu.html");
    ?>
     <header>
       <h2>Contatos</h2>
     </header>
     <hr />
-    
     <div id="contatos">
       <div>
         <img src="estilo/imagens/iconeZap.png" alt="Ícone WhatsApp" />
@@ -27,10 +26,9 @@
       </div>   
     </div>
     <br><br>
-   
     <!--Rodapé-->
     <?php
-     include_once("./componentes/rodape.html");
+     include_once ("./componentes/rodape.html");
     ?>
   </body>
 </html>
