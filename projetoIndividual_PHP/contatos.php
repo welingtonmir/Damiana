@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Contatos</title>
-    <link rel="stylesheet" href="estilo.css/style.css" />
+    <link rel="stylesheet" href="estilo/style.css" />
   </head>
   <body>
      <!--Menu-->

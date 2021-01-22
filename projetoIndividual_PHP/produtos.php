@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Damiana Biquínis - Produtos</title>
-    <link rel="stylesheet" href="./estilo.css/style.css" />
+    <link rel="stylesheet" href="estilo/style.css" />
     <script type="application/javascript" src="funcoes.js/funcoes.js"></script>
   </head>
   <body>

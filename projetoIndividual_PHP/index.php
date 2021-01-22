@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Damiana Biquínis</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css/style.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/style.css" />
   </head>
   <body>
     <!--Menu-->
