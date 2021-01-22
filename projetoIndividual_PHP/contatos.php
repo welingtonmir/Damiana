@@ -18,11 +18,11 @@
     
     <div id="contatos">
       <div>
-        <img src="estilo.css/imagens/iconeZap.png" alt="Ícone WhatsApp" />
+        <img src="estilo/imagens/iconeZap.png" alt="Ícone WhatsApp" />
         <label>(021)9999-9999</label>
       </div>
       <div>
-        <img src="estilo.css/imagens/iconeEmail.png" alt="Ícone Email" />
+        <img src="estilo/imagens/iconeEmail.png" alt="Ícone Email" />
         <label>Email: welingtonmiranda20@gmail.com</label>
       </div>   
     </div>

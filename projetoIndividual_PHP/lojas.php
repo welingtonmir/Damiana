@@ -19,7 +19,7 @@
         <div class="caixasDivisao">
           <div>
             <img
-              src="estilo.css/imagens/foto_nao_disponivel.gif"
+              src="estilo/imagens/foto_nao_disponivel.gif"
               style="width: 120px"
               alt="Foto Loja Rio de Janeiro"
             />
@@ -28,7 +28,7 @@
           <hr />
           <div>
             <img
-              src="estilo.css/imagens/foto_nao_disponivel.gif"
+              src="estilo/imagens/foto_nao_disponivel.gif"
               style="width: 120px"
               alt="Foto Loja São Paulo"
             />
@@ -39,7 +39,7 @@
         <div class="caixasDivisao">
           <div>
             <img
-              src="estilo.css/imagens/foto_nao_disponivel.gif"
+              src="estilo/imagens/foto_nao_disponivel.gif"
               style="width: 120px"
               alt="Foto Loja Santa Catarina"
             />
@@ -48,7 +48,7 @@
           <hr />
           <div>
             <img
-              src="estilo.css/imagens/foto_nao_disponivel.gif"
+              src="estilo/imagens/foto_nao_disponivel.gif"
               style="width: 120px"
               alt="Foto Loja Belo Horizonte"
             />
