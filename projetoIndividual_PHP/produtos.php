@@ -10,7 +10,6 @@
     <!--Menu-->
     <?php
       require_once ("./componentes/menu.html");
-      require_once ('api/selectprod.php');
     ?>
     <header>
       <h2>Biquínis</h2>
@@ -31,11 +30,14 @@
         </ol>
       </section> 
       <section class="produtos">
-        <div class="box_produtos" id="" style="display:inline-block;">
+        <?php
+          require_once ('api/selectprod.php');
+        ?>
+        <div class="box_produtos" id="<?php echo $categoria ?>" style="display:inline-block;">
           <img id="imagem_produto" src="<?php echo $imagem?>" alt="<?php echo $descricao?>" onclick="destaque(this)"/>
-          <p><?php echo $descricao ?>    </p>
-          <p class="precoOriginal">R$ <?php echo $preco ?>  </p>
-          <p class="precoVenda">R$  <?php  echo $pv?>    </p>
+          <p><?php echo $descricao ?></p>
+          <p class="precoOriginal"><?php echo "De: R$".$preco ?>  </p>
+          <p class="precoVenda"><?php  echo "Por: R$".$pv?>    </p>
           <hr>
         </div>
       </section>
