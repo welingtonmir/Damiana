@@ -8,7 +8,7 @@ export default function Produtos(){
     const [ produtos, setProdutos] = useState([]);
     useEffect(() => {
         async function showProdutos() {
-            const url = "http://localhost/Damiana/projetoIndividual_PHP/api/produtosbd.php";
+            const url = "http://localhost:1910/";
             const resposta = await fetch(url);
             const resultado = await resposta.json();
             setProdutos(resultado);
