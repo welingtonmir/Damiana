@@ -1,7 +1,7 @@
 import '../../views/estilos/footer/Footer.css';
 import pagamento from '../../views/estilos/img/formasdepagamento.png';
 
- function Footer(){
+ export default function Footer(){
   return(
     <footer>
     <h5>Pague usando:</h5>
@@ -13,5 +13,3 @@ import pagamento from '../../views/estilos/img/formasdepagamento.png';
   </footer>
   )
 }
-
-export default Footer;

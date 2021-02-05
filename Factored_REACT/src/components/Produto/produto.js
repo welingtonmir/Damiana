@@ -1,19 +1,36 @@
+import { Card, Button, Row } from "react-bootstrap";
+import "../../views/estilos/produtos/produto.css";
+import { useDispatch } from "react-redux";
+import imagem from "../../views/estilos/img/foto_nao_disponivel.gif";
 
+export default function Produto(props) {
 
-export default function Categoria(){
-    return(
-        <section class="categorias">
-            <h3>Categorias</h3>
-            <ol>
-              <li onclick="exibirTodos()">Todos</li>
-              <li onclick="exibirCategoria('croche')">Biquíni Crochê</li>
-              <li onclick="exibirCategoria('cinturaAlta')">Biquíni Cintura Alta</li>
-              <li onclick="exibirCategoria('fioDental')">Biquíni Fio Dental</li>
-              <li onclick="exibirCategoria('cavado')">Biquíni Cavado</li>
-              <li onclick="exibirCategoria('cortininha')">Biquíni Cortininha</li>
-              <li onclick="exibirCategoria('tomaraQueCaia')">Biquíni Tomara-que-caia</li>
-              <li onclick="exibirCategoria('babado')">Biquíni Babado</li>
-            </ol>
-          </section> 
-    );
+  const dispatch = useDispatch();
+  
+  return (
+    <Card class="produtos" className={props.categoria} key={props.id_produto}>
+      <Card.Img src={imagem} variant="top" alt="Imagem do produto" />
+      <Card.Body>
+        <Card.Title class="descricao">{props.descricao}</Card.Title>
+        <Card.Text class="precoOriginal" >
+          R$ {props.preco.toFixed(2).replace(".", ",")}
+        </Card.Text>
+        <Card.Text className="pdv">
+          R$ {props.pdv.toFixed(2).replace(".", ",")}
+        </Card.Text>
+        <Row>
+          <Button
+            className="mx-auto"
+            variant="success"
+            type="button"
+            onClick={() =>
+              dispatch({ type: "adicionarCarrinho", id: props.id_produto })
+            }
+          >
+            Adicionar ao carrinho
+          </Button>
+        </Row>
+      </Card.Body>
+    </Card>
+  );
 }

@@ -8,7 +8,7 @@
 }
 #menu{
     background-color:#43AA8B;
-    height: 75px;
+    height: 78px;
 }
 nav a{
     font-size: 25px;
@@ -18,7 +18,14 @@ nav img{
     
 }
 #logo{
+    
     text-align: left;
     padding:0px 40px 0px ;
     margin: -90px;
+}
+#bolsa{
+    width: 150px;
+    text-align: right;
+    padding:0px 40px 0px ;
+    margin: 0px;
 }

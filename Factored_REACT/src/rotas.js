@@ -1,8 +1,9 @@
 import { Switch, Route } from "react-router-dom";
-import Produtos from "./views/produtos";
-import Contatos from "./views/contatos";
-import Home from "./views/home";
-import Lojas from "./views/lojas";
+import Produtos from "./views/produtos.js";
+import Contatos from "./views/contatos.js";
+import Home from "./views/home.js";
+import Lojas from "./views/lojas.js";
+import Carrinho from './views/carrinho.js';
 
 function Rotas() {
   return (
@@ -11,6 +12,7 @@ function Rotas() {
       <Route exact path="/contatos" component={Contatos} />
       <Route exact path="/" component={Home} />
       <Route exact path="/lojas" component={Lojas} />
+      <Route exact path="/carrinho" component={Carrinho} />
     </Switch>
   );
 }

@@ -1,38 +1,64 @@
-import {Navbar, Nav, Image} from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
-import '../../views/estilos/menu/Menu.css';
-import logo from '../../views/estilos/img/Logo.png';
+import { Navbar, Nav, Image, Form, Button } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
+import "../../views/estilos/menu/Menu.css";
+import logo from "../../views/estilos/img/Logo.png";
+import { useSelector } from "react-redux";
+import bolsa from "../../views/estilos/img/icone--bolsa.png";
 
- function BaseMenu(props){
-   const {location} = props;
-  return(
+function BaseMenu(props) {
+  const { location } = props;
+
+  //acc: acumulador e cur= valor atual
+  const totalItens = useSelector((state) =>
+    state.carrinho.reduce((acc, cur) => {
+      return acc + cur.quantidade;
+    }, 0)
+  );
+
+  return (
     <Navbar className="navbar-dark" expand="lg" id="menu" fixed="top">
       <Navbar.Brand>
         <Nav.Link as={Link} href="/" to="/" className="ml-5">
           <Image id="logo" src={logo} />
-        </Nav.Link>        
+        </Nav.Link>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="itens-menu" />
-      <Navbar.Collapse id="itens-menu" >
-        <Nav activeKey={location.pathname} className="ml-auto mr-3">
+      <Navbar.Toggle aria-controls="items-menu" />
+      <Navbar.Collapse id="items-menu">
+        <Nav activeKey={location.pathname} className="mx-auto mr-3">
           <Nav.Item>
-            <Nav.Link as={Link} href="/" to="/">Home</Nav.Link>
+            <Nav.Link as={Link} href="/" to="/">
+              Home
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} href="/produtos" to="/produtos">Produtos</Nav.Link>
+            <Nav.Link as={Link} href="/produtos" to="/produtos">
+              Produtos
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} href="/contatos" to="/contatos">Contatos</Nav.Link>
+            <Nav.Link as={Link} href="/contatos" to="/contatos">
+              Contatos
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} href="/lojas" to="/lojas">Lojas</Nav.Link>
+            <Nav.Link as={Link} href="/lojas" to="/lojas">
+              Lojas
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
+        <Nav>
+          <Nav.Item>
+            <Nav.Link as={Link} href="/carrinho" to="/carrinho">
+              <Image id="bolsa" src={bolsa} />
+              {totalItens}
+            </Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
-    </Navbar> 
-  )
+    </Navbar>
+  );
 }
 
 const Menu = withRouter(BaseMenu);
 
-export default Menu
+export default Menu;
