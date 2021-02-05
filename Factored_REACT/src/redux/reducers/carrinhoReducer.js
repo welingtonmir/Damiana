@@ -2,19 +2,20 @@
 import produtos from "../../produtos.js";
 
 // variável com dados do estado inicial da lista de produtos e criação o campo quantidade
-const initialState = produtos.map((item) => ({ ...item, quantidade: 0 }));
+const initialState = produtos.map(item => ({ ...item, quantidade: 0 }));
 
 export default (state = initialState, action) => {
   switch (action.type) {
+
     case "adicionarCarrinho":
       return state.map((item) => {
-        item.id_produto === action.id_produto && item.quantidade++;
+        item.id_produto === action.id && item.quantidade++;
         return item;
       });
 
     case "removerCarrinho":
       return state.map((item) => {
-        item.id_prduto === action.id_produto && item.quantidade--;
+        item.id_produto === action.id && item.quantidade--;
         return item;
       });
 

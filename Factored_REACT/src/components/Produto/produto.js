@@ -8,14 +8,14 @@ export default function Produto(props) {
   const dispatch = useDispatch();
   
   return (
-    <Card class="produtos" className={props.categoria} key={props.id_produto}>
+    <Card class="produtos" className={props.categoria} key={props.id}>
       <Card.Img src={imagem} variant="top" alt="Imagem do produto" />
       <Card.Body>
-        <Card.Title class="descricao">{props.descricao}</Card.Title>
-        <Card.Text class="precoOriginal" >
+        <Card.Title class="descricao" className="descricao">{props.descricao}</Card.Title>
+        <Card.Text class="preco" className="preco" >
           R$ {props.preco.toFixed(2).replace(".", ",")}
         </Card.Text>
-        <Card.Text className="pdv">
+        <Card.Text class="pdv" className="pdv">
           R$ {props.pdv.toFixed(2).replace(".", ",")}
         </Card.Text>
         <Row>
@@ -24,7 +24,7 @@ export default function Produto(props) {
             variant="success"
             type="button"
             onClick={() =>
-              dispatch({ type: "adicionarCarrinho", id: props.id_produto })
+              dispatch({ type: "adicionarCarrinho", id: props.id })
             }
           >
             Adicionar ao carrinho

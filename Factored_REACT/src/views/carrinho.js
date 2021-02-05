@@ -27,14 +27,14 @@ export default function Carrinho()  {
     return (
         <Container>
             <h3 className="my-5">Carrinho de Compras</h3>
-            <Table className="text-center">
+            <Table className="text-left">
                 <thead>
                     <tr>
-                        <th>Produto</th>
+                        <th>Imagem</th>
                         <th>Descrição</th>
                         <th>Preço</th>
                         <th>Quantidade</th>
-                        <th></th>
+                        
                     </tr>
                 </thead>
                 <tbody>

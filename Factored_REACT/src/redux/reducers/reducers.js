@@ -8,7 +8,7 @@ import carrinho from "./carrinhoReducer";
 //atribuindo na variável reducers o método de combinação dos redurcers(produto e carrinho)
 const reducers = combineReducers({
   produtos,
-  carrinho,
+  carrinho
 });
 
 //enviando para a store

@@ -11,7 +11,7 @@ export default function CarrinhoComponente(props) {
 
     <table>
       <tbody>
-        <tr key={props.id_produto}>
+        <tr key={props.id}>
           <td width="20%">
             <img
               className="imagemProduto"
@@ -19,10 +19,10 @@ export default function CarrinhoComponente(props) {
               alt="Imagem do produto"
             />
           </td>
-          <td width="20%" className="nomeProduto">
+          <td width="20%" className="descricao">
             {props.descricao}
           </td>
-          <td width="20%" className="precoProduto">
+          <td width="20%" className="preco">
             R$ {(props.preco * props.quantidade).toFixed(2).replace(".", ",")}
           </td>
           <td width="20%" className="quantidadeProduto">
@@ -30,21 +30,14 @@ export default function CarrinhoComponente(props) {
           </td>
           <td width="20%">
             <Button
-              type="button"
-              className="btn-success mx-2"
-              onClick={() =>
-                dispatch({ type: "adicionarCarrinho", id: props.id_produto })
-              }
-            >
+              type="button" className="btn-success mx-2" onClick={() =>
+                dispatch({ type: "adicionarCarrinho", id: props.id })}>
               +
             </Button>
+            X
             <Button
-              type="button"
-              className="btn-danger mx-2"
-              onClick={() =>
-                dispatch({ type: "removerCarrinho", id: props.id_produto })
-              }
-            >
+              type="button" className="btn-danger mx-2" onClick={() =>
+                dispatch({ type: "removerCarrinho", id: props.id })}>
               -
             </Button>
           </td>

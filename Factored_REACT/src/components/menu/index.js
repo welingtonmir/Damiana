@@ -9,11 +9,10 @@ function BaseMenu(props) {
   const { location } = props;
 
   //acc: acumulador e cur= valor atual
-  const totalItens = useSelector((state) =>
+  const totalItens = useSelector(state =>
     state.carrinho.reduce((acc, cur) => {
       return acc + cur.quantidade;
-    }, 0)
-  );
+    }, 0));
 
   return (
     <Navbar className="navbar-dark" expand="lg" id="menu" fixed="top">
@@ -56,7 +55,7 @@ function BaseMenu(props) {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  );
+  )
 }
 
 const Menu = withRouter(BaseMenu);
