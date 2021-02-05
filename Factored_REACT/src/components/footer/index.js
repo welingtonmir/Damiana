@@ -1,11 +1,12 @@
-import './Footer.css';
+import '../../views/estilos/footer/Footer.css';
+import pagamento from '../../views/estilos/img/formasdepagamento.png';
 
  function Footer(){
   return(
     <footer>
     <h5>Pague usando:</h5>
     <img
-      src={require(`./img/formasdepagamento.png`).default}
+      src={pagamento}
       alt="Formas de Pagamento"
     />
     <p>&copy; Welington Miranda</p>
@@ -13,4 +14,4 @@ import './Footer.css';
   )
 }
 
-export default Footer
+export default Footer;

@@ -16,6 +16,7 @@
     display: inline-flex;
     width: 100%;
     flex-wrap: wrap;
+    border: 10px;
 }
 .precoOriginal{
     margin: 0;

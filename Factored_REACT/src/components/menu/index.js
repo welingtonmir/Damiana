@@ -1,6 +1,7 @@
 import {Navbar, Nav, Image} from 'react-bootstrap';
 import {Link, withRouter} from 'react-router-dom';
-import './Menu.css';
+import '../../views/estilos/menu/Menu.css';
+import logo from '../../views/estilos/img/Logo.png';
 
  function BaseMenu(props){
    const {location} = props;
@@ -8,7 +9,7 @@ import './Menu.css';
     <Navbar className="navbar-dark" expand="lg" id="menu" fixed="top">
       <Navbar.Brand>
         <Nav.Link as={Link} href="/" to="/" className="ml-5">
-          <Image id="logo" src={require(`./img/Logo.png`).default} />
+          <Image id="logo" src={logo} />
         </Nav.Link>        
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="itens-menu" />
