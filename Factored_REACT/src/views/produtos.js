@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { CardColumns, Row, Col, ListGroup } from "react-bootstrap";
 
 export default function Produtos() {
+  //Trecho de conexao para acesso a dados com bando MySQL
   /*const [produtos, setProdutos] = useState([]);
   useEffect(() => {
     async function showProdutos() {
