@@ -57,7 +57,7 @@ export default function Produtos() {
   return (
     <div className="d-flex">
       <Row>
-        <Col class="categorias" sm={2} className="coluna-categorias">
+        <Col class="categorias" sm={3} className="coluna-categorias">
           <h3>Categorias</h3>
           <ListGroup variant="flush" className="categorias">
             <ListGroup.Item action variant="light" id="" onClick={filtrar}>
@@ -121,7 +121,7 @@ export default function Produtos() {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col sm={10} className="coluna-produtos">
+        <Col sm={9} className="coluna-produtos">
           <CardColumns className="text-center">{mapeamento}</CardColumns>
         </Col>
       </Row>

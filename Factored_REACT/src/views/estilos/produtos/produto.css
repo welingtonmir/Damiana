@@ -12,12 +12,6 @@
     color: #F3722C;
 }
 /* Produtos*/
-.produtos{
-    display: inline-flex;
-    width: 100%;
-    flex-wrap: wrap;
-    border: 10px;
-}
 .precoOriginal{
     margin: 0;
     font-size:15px;
