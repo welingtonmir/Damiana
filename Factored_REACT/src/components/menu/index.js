@@ -45,7 +45,9 @@ function BaseMenu(props) {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Nav>
+        
+      </Navbar.Collapse>
+      <Nav>
           <Nav.Item>
             <Nav.Link as={Link} href="/carrinho" to="/carrinho">
               <Image id="bolsa" src={bolsa} />
@@ -53,7 +55,6 @@ function BaseMenu(props) {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-      </Navbar.Collapse>
     </Navbar>
   )
 }
