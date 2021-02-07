@@ -8,6 +8,8 @@ export default function Produto(props) {
   const dispatch = useDispatch();
   
   return (
+    
+ 
     <Card class="produtos" className={props.categoria} key={props.id}>
       <Card.Img src={imagem} variant="top" alt="Imagem do produto" />
       <Card.Body>
@@ -27,10 +29,11 @@ export default function Produto(props) {
               dispatch({ type: "adicionarCarrinho", id: props.id })
             }
           >
-            Adicionar ao carrinho
+            Adicionar à bolsa 
           </Button>
         </Row>
       </Card.Body>
     </Card>
+  
   );
 }
