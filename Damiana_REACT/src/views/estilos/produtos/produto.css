@@ -1,0 +1,20 @@
+/*Menu Produtos*/
+#main{
+    display: inline-flex;
+    width: 100%;
+}
+.categorias ol li{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;   
+}
+.categorias ol li:hover{
+    color: #F3722C;
+}
+/* Produtos*/
+.precoOriginal{
+    margin: 0;
+    font-size:15px;
+    color: red;
+    text-decoration:line-through;
+}
