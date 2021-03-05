@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Damiana",
+    "slug": "Damiana-react-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/Logo.png",
+    "splash": {
+      "image": "",
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
