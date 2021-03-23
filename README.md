@@ -1,5 +1,5 @@
-# Damiana
-Descrição: E-comerce de biquínis desenvolvido para aplicar as atividades práticas ocorridas no Projeto Recode Pro.
+<h1 align="center"> Damiana</h1>
+Descrição: E-comerce de biquínis desenvolvido com base nas Tecs aprendidas no Projeto RECODE PRO.
 
 <h2 align="center">Telas Versão Web</h2> 
 
