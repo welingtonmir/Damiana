@@ -1,6 +1,8 @@
 <div align="center">
-    <h1> Damiana</h1>
-    <img width="80" height="60" src="Damiana_REACT/src/views/estilos/img/Logo.png">
+    <row>
+        <h1> Damiana</h1>
+        <img width="80" height="60" src="Damiana_REACT/src/views/estilos/img/Logo.png">
+    </row>
 </div>
 
 <p align="center">Descrição: E-comerce de biquínis desenvolvido com base nas Tecs aprendidas no Projeto RECODE PRO.</p>
