@@ -4,14 +4,14 @@ Descrição: E-comerce de biquínis desenvolvido para aplicar as atividades prá
 ##Telas Versão Web 
 
 <p align="center">
-  <img width="600" height="400" src="Damiana_REACT/src/assets/to_readme/tela_home.png">
+  <img width="400" height="300" src="Damiana_REACT/src/assets/to_readme/tela_home.png">
 </p>
 <p align="center">
-  <img width="400" height="300" src="src/assets/to_readme/tela_produtos.gif">
+  <img width="400" height="300" src="Damiana_REACT/src/assets/to_readme/tela_produtos.gif">
 </p>
 <p align="center">
-  <img width="400" height="300" src="src/assets/to_readme/tela_contato.png">
+  <img width="400" height="300" src="Damiana_REACT/src/assets/to_readme/tela_contato.png">
 </p>
 <p align="center">
-  <img width="400" height="300" src="src/assets/to_readme/tela_lojas.png">
+  <img width="400" height="300" src="Damiana_REACT/src/assets/to_readme/tela_lojas.png">
 </p>
