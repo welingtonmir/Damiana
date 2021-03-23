@@ -1,3 +1,4 @@
+import React from "react";
 import "./estilos/contatos/contatos.css";
 import iconeZap from "./estilos/img/iconeZap.png";
 import iconeEmail from "./estilos/img/iconeEmail.png";

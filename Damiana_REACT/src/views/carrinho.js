@@ -1,3 +1,4 @@
+import React from "react";
 import CarrinhoComponente from '../components/carrinho/carrinho.js';
 import {Container, Table, Button, Row, Col} from 'react-bootstrap'
 import {useSelector, useDispatch} from 'react-redux';

@@ -1,3 +1,4 @@
+import React from "react";
 import "../views/estilos/lojas/lojas.css";
 import imagem from "../views/estilos/img/foto_nao_disponivel.gif";
 

@@ -1,3 +1,4 @@
+import React from "react";
 import Produto from "../components/Produto/produto.js";
 import "../views/estilos/produtos/produto.css";
 import { useState } from "react";

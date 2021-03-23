@@ -1,3 +1,4 @@
+import React from "react";
 import { Navbar, Nav, Image, Form, Button } from "react-bootstrap";
 import { Link, withRouter } from "react-router-dom";
 import "../../views/estilos/menu/Menu.css";

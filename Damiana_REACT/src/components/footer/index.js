@@ -1,3 +1,4 @@
+import React from "react";
 import '../../views/estilos/footer/Footer.css';
 import pagamento from '../../views/estilos/img/formasdepagamento.png';
 

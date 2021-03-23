@@ -1,3 +1,4 @@
+import React from "react";
 import "../views/estilos/home/home.css";
 import { Row, Carousel, Image } from "react-bootstrap";
 import carrousel4 from "../views/estilos/img/carrousel4.jpg";
